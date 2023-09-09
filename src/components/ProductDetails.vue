@@ -1,16 +1,10 @@
 <template>
     <div>
-        <div>
-            <div>
-                <img :src="product.image" :alt="alt">
-            </div>
-            <div>
-                <h1>{{ product.name }}</h1>
-                <h2 v-if="product.available">Available</h2>
-                <h2 v-else>Out of Stock</h2>
-                <p>Price: {{ formattedPrice }}</p>
-            </div>
-        </div>
+        <img :src="product.image" :alt="alt">
+        <h1>{{ product.name }}</h1>
+        <h2 v-if="product.available">Available</h2>
+        <h2 v-else>Out of Stock</h2>
+        <p>Price: {{ formattedPrice }}</p>
     </div>
 </template>
 
