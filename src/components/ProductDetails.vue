@@ -1,10 +1,10 @@
 <template>
-    <div class="product">
-        <div class="product-container">
-            <div class="product-image">
+    <div>
+        <div>
+            <div>
                 <img :src="product.image" :alt="alt">
             </div>
-            <div class="product-info">
+            <div>
                 <h1>{{ product.name }}</h1>
                 <h2 v-if="product.available">Available</h2>
                 <h2 v-else>Out of Stock</h2>
