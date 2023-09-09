@@ -2,7 +2,7 @@
     <div class="product">
         <div class="product-container">
             <div class="product-image">
-                <img :src="product.image" :alt="korm">
+                <img :src="product.image" :alt="alt">
             </div>
             <div class="product-info">
                 <h1>{{ product.name }}</h1>
@@ -25,7 +25,7 @@ export default {
                 price: '99.99',
                 available: true,
                 image: require('../assets/korm.jpg'),
-                alt: 'shirt',
+                alt: 'korm',
             },
         }
     },
